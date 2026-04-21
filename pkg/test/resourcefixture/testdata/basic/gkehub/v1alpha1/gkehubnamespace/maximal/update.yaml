@@ -1,0 +1,11 @@
+apiVersion: gkehub.cnrm.cloud.google.com/v1alpha1
+kind: GKEHubNamespace
+metadata:
+  name: gkh-ns-max-${uniqueId}
+spec:
+  projectRef:
+    external: projects/${projectId}
+  location: global
+  scopeRef:
+    name: gkehubnamespace-dep-max-${uniqueId}
+  resourceID: gkh-ns-max-id-${uniqueId}

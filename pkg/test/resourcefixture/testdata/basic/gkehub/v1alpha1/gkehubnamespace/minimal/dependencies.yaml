@@ -1,0 +1,7 @@
+apiVersion: gkehub.cnrm.cloud.google.com/v1alpha1
+kind: GKEHubScope
+metadata:
+  name: gkehubnamespace-dep-min-${uniqueId}
+spec:
+  projectRef:
+    external: projects/${projectId}
